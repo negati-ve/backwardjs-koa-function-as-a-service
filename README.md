@@ -61,4 +61,6 @@ module.exports = {
 matches and provisions params.id to ctx object
 eg: http://localhost:3433/api/page/12 
 
+![](dynamic-routing.gif)
+
 you can optionally define the HTTP method, route url and function to execute in the module.exports object as shown in example above
