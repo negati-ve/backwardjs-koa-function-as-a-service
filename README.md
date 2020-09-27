@@ -2,13 +2,15 @@
 Koa based Function as a service/FAAS style web framework
 
 # Getting started
-1. npm install backwardjs --save
+1. `npm install backwardjs --save`
+
 2. Create a index.js with following content 
 ```
 const bjs = require('backwardjs');
 bjs.app.listen(3433);
 ```
-2. create a folder /Fns 
+
+3. create a folder /Fns 
 each file in Fns directory is a route, for example, a file /Fns/test.js with following content:
 ```
 const test = async (ctx, next) => {
@@ -17,7 +19,8 @@ const test = async (ctx, next) => {
 module.exports = { test };
 ```
 will be available at localhost:3433/test
-3. `node index.js`
+
+4. `node index.js`
 
 # Dynamic routes
 backwardJs has NextJs style dynamic routes.
