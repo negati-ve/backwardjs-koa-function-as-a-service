@@ -1,6 +1,8 @@
 # BackwardJs
 Koa based Function as a service/FAAS style web framework
 
+![](bjs.gif)
+
 # Getting started
 1. `npm install backwardjs --save`
 
