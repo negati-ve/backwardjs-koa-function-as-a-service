@@ -1,6 +1,7 @@
 const Koa = require('koa');
 var Router = require('koa-router');
 const app = new Koa();
+const bodyParser = require('koa-bodyparser');
 var router = new Router();
 var normalizedPath = require("path").join(__dirname, "Fns");
 var exportedFns = {}
@@ -54,5 +55,6 @@ async function* getFns(dir) {
 
 app
     .use(router.routes())
-    .use(router.allowedMethods());
+    .use(router.allowedMethods())
+    .use(bodyParser());
 module.exports = { app }
