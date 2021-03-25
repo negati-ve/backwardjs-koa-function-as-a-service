@@ -54,7 +54,7 @@ async function* getFns(dir) {
 })()
 
 app
+    .use(bodyParser())
     .use(router.routes())
-    .use(router.allowedMethods())
-    .use(bodyParser());
+    .use(router.allowedMethods());
 module.exports = { app }
